@@ -1,9 +1,11 @@
+/* Reset de margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #333;
@@ -13,63 +15,60 @@ body {
     min-height: 100vh;
 }
 
-.banner{
-    display: flex;
-    align-content: space-around;
-    padding: auto;
-    
+/* Cabeçalho */
+.cabecalho {
+    margin-bottom: 60px;
+    text-align: center;
 }
 
- /* Cabeçalho  */
-.cabecalho {
-    margin-bottom: 60px; 
-}
-.logotipo{
+.logotipo {
     height: 60px;
     width: 190px;
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    margin-left: 40%;
+    margin: 0 auto;
 }
 
-.banner-iframe {
-    width: auto;
-    height: auto;
-    border: 2px solid #d9534f;
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
 }
 
+/* Main Content */
 .main {
     flex: 1;
     padding: 20px;
 }
+
 .grid {
-    max-width: 60%;
+    max-width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: -500px;
-        max-width: 800px;
-        display: grid;
-    
-      }
-      img {
-        max-width: 90%;
-      }
-   
-
-  .video{
-    
-    margin-left: 10px;
-    box-shadow: orangered;
-    box-sizing: border-box;
-    margin: 20px;
-  }
-.componentes{
-    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: -55ch;
+    margin-left: -2ch;
 }
+
+.grid img {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+/* Video */
+.video {
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+    max-width: 60%;
+}
+
 /* Rodapé */
 .rodape {
-    margin-top: auto; /*rodapé  */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
 }
 
 .text-custom-primary {
@@ -80,79 +79,8 @@ body {
     color: #198754; /* Verde de sucesso do Bootstrap */
 }
 
-.text-custom-info {
-    color: #0dcaf0; /* Azul claro de informação do Bootstrap */
-}
-
-.text-custom-warning {
-    color: #ffc107; /* Amarelo de aviso do Bootstrap */
-}
-
-.text-custom-danger {
-    color: #dc3545; /* Vermelho de perigo do Bootstrap */
-}
-
-.text-custom-secondary {
-    color: #6c757d; /* Cinza secundário do Bootstrap */
-}
-
-.text-custom-dark {
-    color: #212529; /* Cinza escuro do Bootstrap */
-}
-
-.text-custom-light {
-    color: #326394; /* Cinza claro do Bootstrap */
-}
-
-.text-custom-muted {
-    color: #6c757d; /* Cinza desativado do Bootstrap */
-}
-
-.text-custom-white {
-    color: #000000; /* Branco */
-}
-
-.rodape{
-    flex-direction: row;
-    color: #0dcaf0;
-    box-shadow: #0dfd95;
-    text-align: left;
-
-}
-.logoroda{
+.logoroda {
     height: 25%;
     width: 40%;
     text-align: left;
-    align-items: normal;
-}
-
-/* paginas fora do corpo principal */
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-li {
-    margin-right: 15px;
-}
-/* CSS styling for the footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-
-    bottom: 0;
-    width: 100%;
 }

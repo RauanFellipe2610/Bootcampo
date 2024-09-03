@@ -9,6 +9,6 @@ function loadHTML(id, url) {
     xhttp.send();
 }
 
-loadHTML("header", "header.html");
-loadHTML("main", "main.html");
-loadHTML("footer", "footer.html");
+loadHTML("header", "pages/header.html");
+loadHTML("main", "pages/main.html");
+loadHTML("footer", "pages/footer.html");
